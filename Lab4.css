@@ -6,7 +6,7 @@ html, body {
 
 body {
     font-family: 'Georgia', sans-serif;  
-    background-color: #f5efe4; 
+    background-color: #FFF2D7; 
     color: #4a3f35; 
     line-height: 1.5;
     margin: 0;
@@ -16,14 +16,14 @@ body {
 
 /* Header */
 header { 
-    background-color: #6d3d10; 
-    color: #ffffff;
+    background-color: #FFF2D7; 
+    color: #553309;
     text-align: center;
     padding: 30px 0; 
-    box-shadow: 0 4px 10px #00000026; 
+    box-shadow: 0 4px 10px #00000026;   
 }
 #title {                                                            /* title item in header */
-    font-family: cursive; 
+    font-family: Raleway; 
     font-size: 3em; 
     font-weight: bold; 
     margin: 0;
@@ -45,7 +45,7 @@ header {
 .navBar {                                                           /* Whole navbar group settings */
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #e5b68d 10%, #6d3d10 25% 75%, #e5b68d 90%);
+    background: linear-gradient(to right, #e3ba97 10%, #6d3d10 25% 75%, #e5b68d 90%);
     display: flex;
     gap: 100px;
     margin-top: 10px;
@@ -66,21 +66,28 @@ header {
 }
 
 /* Picture */
-#banner {
-    margin-bottom: 10px;
-    height: auto;
+img#banner{ 
+    display:block;
+    margin: auto;
+    height: 40vw;
     width: 100%;
-}
+    align-content: center;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+} 
 
 /* Go to Bottom button */
 [href = "#bottomPage"] {
     font-family: cursive;
-    color: white;
+    color: rgb(255, 238, 213);
     text-decoration: none;
     background-color: #8d4f15;
-    padding: 10px;
-    border-radius: 12px;
+    padding: 5px;
+    border-radius: 10px;
     margin: 5px;
+    position: relative;
+    top: 5px; /* Adjust the value as needed */
 }
 
 
@@ -112,7 +119,7 @@ h2 {                                                                /* section h
 ol {                                                                /* whole OL */
     font-size: 1.2em;
     list-style: decimal inside;
-    background: #f8e1cd !important;
+    background: #FFE0B5 !important;
     padding: 20px 40px;
     border-radius: 15px;
     font-weight: bold;
@@ -128,7 +135,7 @@ ol li {                                                             /* OL listed
     width: 100%;
     word-spacing: 2px;
     font-size: 1.2em;
-    background: #f8e1cd !important; 
+    background: #FFE0B5 !important; 
     padding: 40px;
     border-radius: 15px;
     margin-bottom: 2px;
@@ -204,10 +211,86 @@ button:hover, #orderCoffee:hover {                                  /* hover fle
 }
 
 
+/* Definition Section */
+.definition {
+    font-size: 20px;
+    background: #F8C794;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(124, 33, 33, 0.1);
+    line-height: 1.6;
+}
+
+.definition .emphasis {
+    font-weight: bold;
+    color: #b16026;
+}
+
+.definition .term {
+    font-style: italic;
+    color: #7f4b0c;
+}
+
+
+/* Coffee Video */
+.coffeeVideo {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* Team Members */
+.teamContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.teamMember {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the images circular */
+    display: block;
+    margin: auto;
+    border: 3px solid #8B4513;
+    object-fit: cover; /* Ensures the images maintain proportions */
+}
+
+.label {
+    font-weight: bold;
+    text-align: center;
+    color: #5A3221;
+    margin-top: 10px;
+}
+
+/* Coffee Section */
+.coffee {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Images inside Definitions */
+.coffee img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
 
 [href = "#title"]{                                                  /* back to top button */
     font-family: cursive;
-    color: white;
+    color: rgb(255, 238, 213);
     text-decoration: none;
     background-color: #8d4f15;
     padding: 10px;
@@ -221,10 +304,10 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 footer #title{
     font-family: cursive; 
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
