@@ -259,14 +259,15 @@ img.imgBanner[src*="Logo.jpg"] {
 }
 
 .teamMember {
-    width: 100px;
-    height: 100px;
+    width:50% ;
+    height: 50%;
     border-radius: 50%; 
     display: block;
     margin: auto;
     border: 3px solid #8B4513;
     object-fit: cover; 
 }
+
 
 .label {
     font-weight: bold;
@@ -310,10 +311,10 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 footer #title{
     font-family: cursive; 
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
