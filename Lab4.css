@@ -66,11 +66,33 @@ header {
 }
 
 /* Picture */
-img#banner{ 
+.home img#banner{ 
     display:block;
     margin: auto;
     height: 40vw;
     width: 100%;
+    align-content: center;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+} 
+
+.order img#banner{ 
+    display:block;
+    margin: auto;
+    height: 40vw;
+    width: 80%;
+    align-content: center;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+} 
+
+.about img#banner{ 
+    display:block;
+    margin: auto;
+    height: 40vw;
+    width: 60%;
     align-content: center;
     object-fit: cover;
     object-position: center;
