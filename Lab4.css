@@ -80,14 +80,14 @@ img#banner{
 /* Go to Bottom button */
 [href = "#bottomPage"] {
     font-family: cursive;
-    color: rgb(255, 238, 213);
+    color: #ffffff;
     text-decoration: none;
     background-color: #8d4f15;
     padding: 5px;
     border-radius: 10px;
     margin: 5px;
     position: relative;
-    top: 5px; /* Adjust the value as needed */
+    top: 5px;
 }
 
 
@@ -145,6 +145,7 @@ ol li {                                                             /* OL listed
     height: 500px;
     width: auto;
     margin: 2px;
+    background: none !important;
 }
 button, #orderCoffee {                                              /* Order button */
     background: linear-gradient(to right, #8d4f15, #e5b68d);
@@ -168,6 +169,7 @@ button:hover, #orderCoffee:hover {                                  /* hover fle
     box-shadow: 3px 6px 12px #00000033;
 }
 
+
 /* Order */
 .order .coffee #tagline {
     text-align: center;
@@ -189,35 +191,39 @@ button:hover, #orderCoffee:hover {                                  /* hover fle
 .order td{                                                          /* all table data */
     text-align: center; 
     vertical-align: middle;
-    width: auto;
-    height: auto;
+    width: 300px;
+    height: 100px;
     max-width: 100%;
     border-radius: 6px;
     box-shadow: 1px 2px 6px #0000001a;
     font-family: cursive;
     font-weight: 100;
+    font-size: 1.5em;
 }
 .order td img {                                                     /* Selecets images in table cell */
     display: block;  
     margin: 0 auto;
-    width: auto;
+    width: 100px;
     height: 100px;
     border-radius: 6px;
     box-shadow: 1px 2px 6px #0000001a;
     transition: transform 0.3s ease-in-out; 
+    border-radius: 10px;
+    background-color: #4a3f35;
 }
 .order td img:hover {
     transform: scale(1.5);
 }
 
-img.imgBanner[src*="Logo.jpg"] {
+
+/*About*/
+.about img.imgBanner[src*="Logo.jpg"] {
     max-width: 50%;
     max-height: 10%;
     object-fit: cover;
 }
-
 /* Definition Section */
-.definition {
+.about .definition {
     font-size: 20px;
     background: #F8C794;
     padding: 20px;
@@ -226,21 +232,19 @@ img.imgBanner[src*="Logo.jpg"] {
     width: 80%;
     box-shadow: 0 4px 8px rgba(124, 33, 33, 0.1);
     line-height: 1.6;
+    text-align: center;
 }
-
-.definition .emphasis {
+.about .definition .emphasis {
     font-weight: bold;
     color: #b16026;
 }
-
-.definition .term {
+.about .definition .term {
     font-style: italic;
     color: #7f4b0c;
 }
-
-
 /* Coffee Video */
-.coffeeVideo {
+.about .coffeeVideo {
+    gap: 10px;
     width: 100%;
     max-width: 500px;
     height: 280px;
@@ -249,35 +253,33 @@ img.imgBanner[src*="Logo.jpg"] {
 }
 
 /* Team Members */
-.teamContainer {
+.about .teamContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 100px;
     text-align: center;
 }
-
-.teamMember {
-    width:50% ;
-    height: 50%;
-    border-radius: 50%; 
+.about .teamMember {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; 
     display: block;
     margin: auto;
     border: 3px solid #8B4513;
     object-fit: cover; 
+    margin-bottom: 20px;
 }
-
-
-.label {
+.about .label {
     font-weight: bold;
     text-align: center;
     color: #5A3221;
     margin-top: 10px;
+    width: 200px;
 }
-
 /* Coffee Section */
-.coffee {
+.about .coffee {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -285,9 +287,8 @@ img.imgBanner[src*="Logo.jpg"] {
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 /* Images inside Definitions */
-.coffee img {
+.about [src="Images/CoffeeDrop.jpg"] {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
